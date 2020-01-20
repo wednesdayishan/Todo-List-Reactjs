@@ -1,13 +1,113 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+}
+#root {
+  /* display : flex; */
+  margin: auto;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+#main {
+  width : 100%;
+}
+.addNewTodoListDiv {
+  
+ display: flex;
+ /* width : 100%, */
+}
+#addNewTodoListInput {
+  flex : 3;
+}
+#addNewTodoListButton {
+  flex : 1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todoListItemContainer {
+  display: flex;
+  flex-direction: column;
+}
+.nestedInputAndButtonContainer {
+  display: flex;
+}
+
+.nestedTodoList {
+  display: flex;
+}
+.nestedCheckbox {
+  flex : 1;
+}
+.nestedItemName{
+  flex : 3;
+}
+FontAwesomeIcon {
+  flex : 1;
+}
+
+.nestedListItemContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.nestedTodoListContainer {
+  display: flex;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: #c44635;
+  color: whitesmoke;
+}
+hr {
+  margin : 0;
+}
+.todoListItem {
+  /* height : 5%; */
+  padding: 0.2em;
+}
+.todoListItem:nth-child(odd) { background: #e3e7e8; }
+
+#addNewTodoListInput {
+  border-radius: .28571429rem;
+  line-height: 1.21428571em;
+  padding: .67857143em 1em;
+  border: 1px solid rgba(34,36,38,.15);
+  color: rgba(0,0,0,.87);
+  box-shadow: none;
+}
+
+#addNewTodoListInput:focus {
+  border-color: #85b7d9;
+  background: #fff;
+    color: rgba(0,0,0,.8);
+    outline-width: 0;
+}
+
+.inputNewNestedItem {
+  flex : 3;
+  border-radius: .28571429rem;
+  line-height: 1.21428571em;
+  padding: .37857143em 1em;
+  border: 1px solid rgba(34,36,38,.15);
+  color: rgba(0,0,0,.87);
+  box-shadow: none;
+}
+.inputNewNestedItem:focus {
+  border-color: #85b7d9;
+  background: #fff;
+    color: rgba(0,0,0,.8);
+    outline-width: 0;
+}
+
+.buttonToAddNewNestedItem {
+  flex : 1;
+  padding: .47857143em 1em;
+}
+
+FontAwesomeIcon {
+  float: right;
 }
